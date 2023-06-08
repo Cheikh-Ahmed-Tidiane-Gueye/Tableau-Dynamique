@@ -1,0 +1,70 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+
+/* Barre de recherche animee (CSS & javascript)*/
+.search{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 60px;
+    transition: 0.5s;
+    box-shadow: 0 0 0 5px grey;
+    overflow: hidden;
+}
+.search button{
+    border: none;
+}
+.search.active{
+    width: 360px
+}
+.icon{
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 60px;
+}
+.icon img{
+    width: 30px;
+    height: 30px;
+}
+.search .input{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    left: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search .input input{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 0;
+}
+img[alt='Best']{
+    width: 35px;
+    height: 35px;
+}
+/* Barre de recherche animee (CSS only)*/
+
